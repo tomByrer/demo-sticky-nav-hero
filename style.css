@@ -1,4 +1,5 @@
 body {
+  display: table;
   font-family: 'Alegreya Sans SC', sans-serif;
 }
 
@@ -6,7 +7,7 @@ section {
   background-color: #1ea2eb;
   color: white;
   text-align: center;
-  display: table;
+  display: table-row;
   min-width: 100%;
   height: calc(100vh - 50px);
 }
