@@ -7,7 +7,7 @@ $(function(){
   var $next = $nav.next();
   var windowHeight = $window.height();
   // Find the value of 90% of the viewport height
-  var ninetypercent = windowHeight - MENU_HEIGHT;
+  var heroHeight = windowHeight - MENU_HEIGHT;
   // navHeight could change, so let's get the height
   var navHeight = $nav.outerHeight(true);
   $window.on('resize', function(){
@@ -15,7 +15,7 @@ $(function(){
     // after a resize we need to make sure the values are still correct
 
     windowHeight = $(window).height();
-    ninetypercent = .9 * windowHeight;
+    heroHeight = windowHeight - MENU_HEIGHT;
     navHeight = $nav.outerHeight(true);
   });
 
@@ -25,7 +25,7 @@ $(function(){
   $window.on('scroll resize', function(){
 
     // Store the document scroll function in a variable
-    var y = $window.scrollTop() > ninetypercent;
+    var y = $window.scrollTop() > heroHeight;
 
     // If the document is scrolled 90%        
     // Add the "sticky" class
