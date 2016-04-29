@@ -1,6 +1,4 @@
 body {
-  display: table;
-  width: 100%;
   font-family: 'Alegreya Sans SC', sans-serif;
 }
 
@@ -8,8 +6,8 @@ section {
   background-color: #1ea2eb;
   color: white;
   text-align: center;
-  display: table-row;
-  width: 100%;
+  display: table;
+  min-width: 100%;
   height: calc(100vh - 50px);
 }
 section:nth-of-type(2n) {
@@ -18,16 +16,14 @@ section:nth-of-type(2n) {
 section.hero {
   background-color: #bed600;
 }
-article {
+section h1 {
   display: table-cell;
   vertical-align: middle;
-}
-h1 {
   font-size: 56px;
 }
 
 nav {
-  min-height: 50px;
+  height: 50px;
   width: 100%;
   background-color: #111;
   color: white;
